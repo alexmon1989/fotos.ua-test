@@ -27,8 +27,7 @@ MYAPP.changeColor = (function(){
 	
         // Выполняем фунцкцию смены цвета по интервалу
         intervalID = setInterval(function(){
-			console.log(colors);
-			
+		
             // Меняем цвет (ПЛАВНО!)
             $( selector ).animate( {"background-color": colors[i]}, 'slow' );
 
