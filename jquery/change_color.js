@@ -57,7 +57,7 @@ MYAPP.changeColor = (function(){
         if ( intervalIDs ) {
             var id = intervalIDs[ selector ];
             if (id) {
-                // Выключаем интервад
+                // Выключаем интервал
                 clearInterval(intervalID);
                 return true;
             }

@@ -8,6 +8,12 @@
     <div id="my-block">
         Текст блока, цвет которого меняется
     </div>
+    <div id="my-block2">
+        Текст блока, цвет которого меняется
+    </div>
+    <div id="my-block3">
+        Текст блока, цвет которого меняется
+    </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery-color/jquery.color.js"></script>
@@ -17,9 +23,11 @@
         $(function(){
             // Включение
             MYAPP.changeColor.changeOn('#my-block', 4000);
+            MYAPP.changeColor.changeOn('#my-block2', 4000);
+            MYAPP.changeColor.changeOn('#my-block3', 4000);
 
             // Выключение
-            //MYAPP.changeColor.changeOff('#my-block');
+            MYAPP.changeColor.changeOff('#my-block');
         });
     </script>
 
