@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Тестовое задание (jQuery)</title>
+</head>
+<body>
+    <div id="my-block">
+        Текст блока, цвет которого меняется
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-color/jquery.color.js"></script>
+    <script src="change_color.js"></script>
+
+    <script>
+        $(function(){
+            // Включение
+            MYAPP.changeColor.changeOn('#my-block', 4000);
+
+            // Выключение
+            //MYAPP.changeColor.changeOff('#my-block');
+        });
+    </script>
+
+</body>
+</html>

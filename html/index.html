@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  
+		<style>
+            div{
+                width: 470px;
+            }
+
+            ul{
+                font-size: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            ul li{
+                font-size: 14px;
+                display: inline-block; /* ИЛИ float:left; */
+                min-width: 150px;
+                min-height: 150px;
+                background-color: #009900;
+                margin-top: 10px;
+                margin-right: 10px;
+                padding: 0;
+            }
+
+            /* Каждому третьему элементу убираем отступ справа */
+            ul li:nth-child(3n){
+                margin-right: 0px;
+            }
+
+            /* Первым трём элементам убираем отступ сверху */
+            ul li:nth-child(1), ul li:nth-child(2), ul li:nth-child(3){
+                margin-top: 0px;
+            }
+		</style>
+	</head>
+	
+	<body>
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+	</body>
+</html>
